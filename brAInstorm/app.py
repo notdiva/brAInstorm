@@ -3,6 +3,8 @@ import streamlit as st
 import os
 from openai import OpenAI
 
+
+st.set_page_config(page_title="brAInstorm", page_icon="🚀", layout="centered")
 api_key = st.secrets["OPENROUTER_API_KEY"]
 st.write("🔒 API key length:", len(api_key))  # should print a number > 30
 
@@ -38,7 +40,6 @@ Your response:
     return response.choices[0].message.content.strip()
 
 # ----- Streamlit UI -----
-st.set_page_config(page_title="brAInstorm", page_icon="🚀", layout="centered")
 
 st.title("🤖 brAInstorm buddy")
 st.markdown("Enter your startup idea and get AI-generated product names, taglines, business models, and launch strategies.")

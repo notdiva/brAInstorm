@@ -4,6 +4,7 @@ import os
 from openai import OpenAI
 
 api_key = st.secrets["OPENROUTER_API_KEY"]
+st.write("🔒 API key length:", len(api_key))  # should print a number > 30
 
 client = OpenAI(
     api_key=api_key,

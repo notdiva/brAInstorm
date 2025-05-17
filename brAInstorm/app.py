@@ -6,6 +6,7 @@ from openai import OpenAI
 
 # ----- OpenRouter API Setup -----
 
+api_key = st.secrets["OPENROUTER_API_KEY"]
 load_dotenv()
 openai.api_key = os.getenv("OPENROUTER_API_KEY")  # best practice: use env variable
 openai.api_base = "https://openrouter.ai/api/v1"

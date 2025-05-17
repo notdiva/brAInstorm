@@ -13,6 +13,7 @@ Enter your startup idea or problem statement, and get instant AI-generated:
 
 ## How to Use
 
+Open https://brainstormbuddy.streamlit.app/
 1. Type your startup idea or problem statement into the input box.  
 2. Click **Brainstorm Now**.  
 3. Wait a few seconds while AI generates ideas.  

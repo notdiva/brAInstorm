@@ -6,8 +6,8 @@ from openai import OpenAI
 api_key = st.secrets["OPENROUTER_API_KEY"]
 
 client = OpenAI(
-    api_key=os.getenv("OPENROUTER_API_KEY"),
-    base_url="https://openrouter.ai/api/v1"  # Important!
+    api_key=api_key,
+    base_url="https://openrouter.ai/api/v1"
 )
 
 def brainstorm_startup(idea):
